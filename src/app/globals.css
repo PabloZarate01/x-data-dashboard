@@ -4,7 +4,21 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+@theme {
+  --font-display: "Mulish", sans-serif;
+  --breakpoint-3xl: 120rem;
+  --color-app-primary: #3751ff;
+  --color-app-light-blue: #dde2ff;
+  --color-app-light-gray: #F0F1F7;
+  --color-app-dark-gray: #363740;
+  --color-app-darker-gray: #252733;
+  --color-app-gray-text: #a4a6b3;
+  --color-app-gray-muted: #9fa2b4;
+  --color-app-purple: #7f56d9;
+  --color-app-light-purple: #f4ebff;
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,8 +33,12 @@
   }
 }
 
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-display);
 }
