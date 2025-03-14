@@ -9,7 +9,7 @@ interface AppInputProps<T extends FieldValues> {
     placeholder?: string;
     register: UseFormRegister<T>;
     error?: string;
-    showForgotPassword?: boolean; // New prop for forgot password link
+    showForgotPassword?: boolean;
 }
 
 const AppInput = <T extends FieldValues>({
@@ -26,7 +26,7 @@ const AppInput = <T extends FieldValues>({
     return (
         <div className="flex flex-col space-y-1">
             <div className="flex justify-between items-center">
-                <label htmlFor={name} className="text-sm font-semibold text-app-gray-muted">
+                <label htmlFor={name} className="text-sm font-bold text-app-gray-muted">
                     {label}
                 </label>
                 {showForgotPassword && (
