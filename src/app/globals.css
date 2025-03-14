@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f8fc;
+  --foreground: #252733;
 }
 @theme {
   --font-display: "Mulish", sans-serif;
   --breakpoint-3xl: 120rem;
   --color-app-primary: #3751ff;
   --color-app-light-blue: #dde2ff;
-  --color-app-light-gray: #F0F1F7;
+  --color-app-light-white: #f7f8fc;
+  --color-app-light-gray: #f0f1f7;
+  --color-app-light-stone: #DFE0EB;
   --color-app-dark-gray: #363740;
   --color-app-darker-gray: #252733;
   --color-app-gray-text: #a4a6b3;
@@ -24,13 +26,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 .font-inter {

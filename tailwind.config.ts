@@ -14,6 +14,7 @@ const config: Config = {
                 'app-purple': "#7F56D9",
                 'app-light-purple': "#F4EBFF",
                 'app-light-gray': "#F0F1F7",
+                'app-light-stone': "#DFE0EB",
             },
         },
     },
