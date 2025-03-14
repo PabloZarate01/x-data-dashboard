@@ -1,5 +1,10 @@
 {
   "name": "x-data-dashboard",
+  "author": {
+    "name": "Pablo Zárate",
+    "email": "pablozarateayala@gmail.com",
+    "url": "https://www.linkedin.com/in/pablozarateayala/"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
