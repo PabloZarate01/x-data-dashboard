@@ -39,7 +39,7 @@ const SignInPage = () => {
                 />
                 <p className="font-bold text-app-gray-muted text-[19px]">Dashboard Kit</p>
             </div>
-            <h1 className="text-2xl font-semibold text-app-darker-gray text-center mb-3">Log In to Dashboard Kit</h1>
+            <h1 className="text-2xl font-bold text-app-darker-gray text-center mb-3">Log In to Dashboard Kit</h1>
             <p className="text-center text-app-gray-text text-[14px]">Enter your email and password below</p>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mt-12">
                 <AppInput
@@ -61,7 +61,7 @@ const SignInPage = () => {
                 />
                 <button
                     type="submit"
-                    className="w-full bg-app-primary text-white py-2 rounded-md hover:bg-app-light-blue transition shadow-[0px_4px_12px_#3751FF40]"
+                    className="w-full bg-app-primary text-white py-3 rounded-md hover:bg-app-light-blue transition shadow-[0px_4px_12px_#3751FF40]"
                 >
                     Log In
                 </button>
