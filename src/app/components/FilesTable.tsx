@@ -23,14 +23,14 @@ const files = [
 
 const FilesTable = () => {
     return (
-        <div className="bg-white pt-8 rounded-lg shadow w-full">
-            <div className="flex justify-between items-center mb-8 px-8">
+        <div className="bg-white pt-6 rounded-lg shadow w-full">
+            <div className="flex justify-between items-center mb-6 px-6">
                 <h2 className="text-xl font-semibold text-app-dark-blue">Files uploaded</h2>
                 <div className="flex gap-2">
-                    <button className="border border-app-light-stone px-4 py-2 rounded-lg text-app-dark-gray-200 font-medium text-sm hover:bg-app-light-blue transition-colors">
+                    <button className="border border-app-light-stone w-[118px] justify-center h-10 rounded-lg text-app-dark-gray-200 font-medium text-sm hover:bg-app-light-blue transition-colors">
                         Download all
                     </button>
-                    <button className="bg-app-purple text-white px-4 py-2 rounded-lg flex items-center gap-2 font-medium text-sm hover:bg-app-dark-blue transition-colors">
+                    <button className="bg-app-purple text-white text-center justify-center w-[108px] h-10 rounded-lg flex items-center gap-2 font-medium text-sm hover:bg-app-dark-blue transition-colors">
                         <Image
                             alt="Upload icon"
                             src="images/cloud-arrow-up.svg"
@@ -45,25 +45,25 @@ const FilesTable = () => {
                 <table className="w-full border-collapse font-inter">
                     <thead>
                         <tr className="text-left text-sto text-sm border-b border-app-light-stone">
-                            <th className="h-[72px] pl-8"><input type="checkbox" /></th>
+                            <th className="h-[72px] pl-6"><input type="checkbox" /></th>
                             <th className="h-[72px]">File name</th>
                             <th className="h-[72px]">File size</th>
                             <th className="h-[72px]">Date uploaded</th>
                             <th className="h-[72px]">Last updated</th>
                             <th className="h-[72px]">Uploaded by</th>
-                            <th className="h-[72px] pr-8"></th>
+                            <th className="h-[72px] pl-6"></th>
                         </tr>
                     </thead>
                     <tbody>
                         {files.map((file, index) => (
                             <tr key={index} className="border-b border-app-light-stone last:border-none odd:bg-gray-50 hover:bg-gray-100">
-                                <td className="h-[72px] text-app-gray-text-100 pl-8"><input type="checkbox" /></td>
+                                <td className="h-[72px] text-app-gray-text-100 pl-6"><input type="checkbox" /></td>
                                 <td className="h-[72px] text-app-dark-blue">{file.name}</td>
                                 <td className="h-[72px] text-app-gray-text-100">{file.size}</td>
                                 <td className="h-[72px] text-app-gray-text-100">{file.uploaded}</td>
                                 <td className="h-[72px] text-app-gray-text-100">{file.updated}</td>
                                 <td className="h-[72px] text-app-gray-text-100">{file.uploader}</td>
-                                <td className="h-[72px] text-app-gray-text-100 pr-8 text-gray-400 cursor-pointer">⋮</td>
+                                <td className="h-[72px] text-app-gray-text-100 pl-6 text-gray-400 cursor-pointer">⋮</td>
                             </tr>
                         ))}
                     </tbody>
