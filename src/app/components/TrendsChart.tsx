@@ -6,7 +6,7 @@ const TrendsChart = () => {
     return (
         <div className="flex bg-white rounded-lg shadow">
             <div className="flex flex-1 sm:flex-2/3 flex-col px-6 py-6">
-                <h3 className="text-xl font-semibold text-app-dark-gray mb-2">Todays trends</h3>
+                <h3 className="text-xl font-semibold text-app-dark-gray mb-2">{`Today's trends`}</h3>
                 <p className="text-sm text-app-gray-muted mb-4">as of 25 May 2019, 09:41 PM</p>
                 <div className="max-w-[686] max-h-[380px]">
                     <Image
